@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.20)  29 OCT 2022 22:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.20)  30 OCT 2022 00:35
 entering extended mode
 **c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex
 (c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex
@@ -766,8 +766,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Warning: Reference `fig:LSPR' on page \@Arabic \c@page  undefined on input line 156.
 
 
-Overfull \hbox (1.6426pt too wide) in paragraph at lines 151--160
-[]\OT1/cmr/m/n/12 Special type of NPs with huge uti-li-zation in bi-o-me-di-cine include sur-face plasmons
+Overfull \hbox (4.90645pt too wide) in paragraph at lines 151--160
+[]\OT1/cmr/m/n/12 Special type of NPs with huge uti-li-zation in bi-o-me-di-cine include sur-face plasmons,
  []
 
 c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:160: Missing number, treated as zero.
@@ -804,28 +804,27 @@ File: obrazky//color.png Graphic file (type png)
 <use obrazky//color.png>
 Package pdftex.def Info: obrazky//color.png  used on input line 189.
 (pdftex.def)             Requested size: 426.79135pt x 262.7852pt.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:192: Missing number, treated as zero.
+<to be read again> 
+                   \hfil 
+l.192         \end{figure}
+                          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[2 <./obrazky//LSPR.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: Reference `fig:GNR_shape' on page \@Arabic \c@page  undefined on input line 194.
 
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:198: Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.198 
-      
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[2 <./obrazky//LSPR.png>]
 <obrazky//GNRs_shapes.png, id=24, 853.1875pt x 639.38875pt>
 File: obrazky//GNRs_shapes.png Graphic file (type png)
 <use obrazky//GNRs_shapes.png>
 Package pdftex.def Info: obrazky//GNRs_shapes.png  used on input line 200.
 (pdftex.def)             Requested size: 426.79135pt x 319.84969pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -840,52 +839,51 @@ Package pdftex.def Info: obrazky//tem_principle.png  used on input line 210.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:224: Missing number, treated as zero.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:223: Missing number, treated as zero.
 <to be read again> 
                    \hfil 
-l.224         W
-               ith TEM it is more complicated, because the result can be obt...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[3 <./obrazky//GNR.jpg>]
-
-LaTeX Warning: Reference `fig:otsu' on page \@Arabic \c@page  undefined on input line 242.
-
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:244: Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.244 
+l.223 
       
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
+[3 <./obrazky//GNR.jpg>]
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:235: Missing number, treated as zero.
+<to be read again> 
+                   \hfil 
+l.235         T
+               he most basic and even fast methods are region-based methods....
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
 [4 <./obrazky//color.png>]
+
+LaTeX Warning: Reference `fig:otsu' on page \@Arabic \c@page  undefined on input line 241.
+
 <obrazky//otsu_method.png, id=32, 431.6125pt x 318.18875pt>
 File: obrazky//otsu_method.png Graphic file (type png)
 <use obrazky//otsu_method.png>
-Package pdftex.def Info: obrazky//otsu_method.png  used on input line 246.
+Package pdftex.def Info: obrazky//otsu_method.png  used on input line 245.
 (pdftex.def)             Requested size: 426.79135pt x 314.64368pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:265: Missing number, treated as zero.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:264: Missing number, treated as zero.
 <to be read again> 
                    \hfil 
-l.265 
+l.264 
       
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
 [5 <./obrazky//GNRs_shapes.png>]
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:265: Missing number, treated as zero.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:264: Missing number, treated as zero.
 <to be read again> 
                    \hfil 
-l.265 
+l.264 
       
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -893,45 +891,46 @@ look up `weird error' in the index to The TeXbook.)
 
 [6 <./obrazky//tem_principle.png>]
 
-LaTeX Warning: Reference `fig:watershed' on page \@Arabic \c@page  undefined on input line 266.
+LaTeX Warning: Reference `fig:watershed' on page \@Arabic \c@page  undefined on input line 265.
 
-<obrazky//watershed.jpg, id=42, 530.73282pt x 175.40532pt>
-File: obrazky//watershed.jpg Graphic file (type jpg)
-<use obrazky//watershed.jpg>
-Package pdftex.def Info: obrazky//watershed.jpg  used on input line 276.
-(pdftex.def)             Requested size: 426.79135pt x 141.0551pt.
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:279: Missing number, treated as zero.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:273: Missing number, treated as zero.
 <to be read again> 
                    \hfil 
-l.279         \end{figure}
-                          
+l.273 
+      
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
 [7 <./obrazky//otsu_method.png (PNG copy)>]
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:302: Missing number, treated as zero.
+<obrazky//watershed.jpg, id=45, 530.73282pt x 175.40532pt>
+File: obrazky//watershed.jpg Graphic file (type jpg)
+<use obrazky//watershed.jpg>
+Package pdftex.def Info: obrazky//watershed.jpg  used on input line 275.
+(pdftex.def)             Requested size: 426.79135pt x 141.0551pt.
+
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:296: Missing number, treated as zero.
 <to be read again> 
                    \hfil 
-l.302         \begin{equation}
-                              
+l.296         \end{equation}
+                            
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
 [8 <./obrazky//watershed.jpg>]
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:311: Missing $ inserted.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:310: Missing $ inserted.
 <inserted text> 
                 $
-l.311             \begin{bmatrix}
+l.310             \begin{bmatrix}
                                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:315: Missing $ inserted.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:314: Missing $ inserted.
 <inserted text> 
                 $
-l.315             \end{bmatrix}
+l.314             \end{bmatrix}
                                \hlinefill
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -939,8 +938,8 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:315: Undefined control sequence.
-l.315             \end{bmatrix}\hlinefill
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:314: Undefined control sequence.
+l.314             \end{bmatrix}\hlinefill
                                          
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -948,18 +947,18 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:316: Missing $ inserted.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:315: Missing $ inserted.
 <inserted text> 
                 $
-l.316             \begin{bmatrix}
+l.315             \begin{bmatrix}
                                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:320: Missing $ inserted.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:319: Missing $ inserted.
 <inserted text> 
                 $
-l.320             \end{bmatrix}
+l.319             \end{bmatrix}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -967,18 +966,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:337: Missing $ inserted.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:336: Missing $ inserted.
 <inserted text> 
                 $
-l.337             \begin{bmatrix}
+l.336             \begin{bmatrix}
                                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:341: Missing $ inserted.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:340: Missing $ inserted.
 <inserted text> 
                 $
-l.341             \end{bmatrix}
+l.340             \end{bmatrix}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -986,10 +985,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:355: Missing number, treated as zero.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:354: Missing number, treated as zero.
 <to be read again> 
                    \hfil 
-l.355 
+l.354 
       
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -999,13 +998,13 @@ look up `weird error' in the index to The TeXbook.)
 <obrazky//k-means.jpg, id=56, 240.9pt x 211.5102pt>
 File: obrazky//k-means.jpg Graphic file (type jpg)
 <use obrazky//k-means.jpg>
-Package pdftex.def Info: obrazky//k-means.jpg  used on input line 357.
+Package pdftex.def Info: obrazky//k-means.jpg  used on input line 356.
 (pdftex.def)             Requested size: 426.79135pt x 374.7603pt.
 
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:368: Missing number, treated as zero.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:367: Missing number, treated as zero.
 <to be read again> 
                    \hfil 
-l.368 
+l.367 
       
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1015,26 +1014,26 @@ look up `weird error' in the index to The TeXbook.)
 <obrazky//neural_network.jpg, id=60, 566.86781pt x 295.85532pt>
 File: obrazky//neural_network.jpg Graphic file (type jpg)
 <use obrazky//neural_network.jpg>
-Package pdftex.def Info: obrazky//neural_network.jpg  used on input line 387.
+Package pdftex.def Info: obrazky//neural_network.jpg  used on input line 386.
 (pdftex.def)             Requested size: 426.79135pt x 222.75317pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:404: Missing number, treated as zero.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:403: Missing number, treated as zero.
 <to be read again> 
                    \hfil 
-l.404 
+l.403 
       
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
 [11]
-c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:408: Missing number, treated as zero.
+c:/Users/drakv/Desktop/fbmi/projekt/projekt/versions_of_project/spr2_latex/template/state_of_art.tex:407: Missing number, treated as zero.
 <to be read again> 
                    \hfil 
-l.408 \end{document}
+l.407 \end{document}
                     
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1066,7 +1065,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,9n,66p,829b,1677s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/drakv/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/drakv/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/drakv/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/drakv/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/drakv/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/drakv/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/drakv/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/drakv/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/drakv/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/drakv/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/drakv/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on state_of_art.pdf (13 pages, 1205753 bytes).
+Output written on state_of_art.pdf (13 pages, 1205563 bytes).
 PDF statistics:
  111 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
