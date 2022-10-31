@@ -83,7 +83,7 @@
       <file>state_of_art.bcf</file>
     </requires>
     <requires type="editable">
-      <file>citace.bib</file>
+      <file>reference_state_of_art.bib</file>
     </requires>
   </external>
 </requests>
