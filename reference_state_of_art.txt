@@ -1,24 +1,16 @@
+(Přikládám i zrdojový soubor s citacemi, protože nekompletní citace se nepropsaly do dokumentu.)
+
 @book{1,
-  title={Visual computing for medicine: theory, algorithms, and applications},
-  author={Preim, Bernhard and Botha, Charl P},
-  year={2013},
-  publisher={Newnes}
+  ISBN = {978-0-12-415873-3},
 }
 
-@online{31,
-  title = {MathWorks},
-  url = {https://www.mathworks.com},
-  year = {1994-2022}
+@misc{2,
+  webpage = {https://www.mathworks.com}
 }
 
 @article{3,
-  title={Medical image segmentation: a review},
-  author={Patil, Dinesh D and Deore, Sonal G},
-  journal={International Journal of Computer Science and Mobile Computing},
-  volume={2},
-  number={1},
-  pages={22--27},
-  year={2013}
+  ISSN = {2320–088X},
+  DOI = {},
 }
 
 @article{4,
@@ -86,12 +78,8 @@
 
 
 @book{11,
-  title={Úvod do nanovědy a nanotechnologií},
-  author={Kolářová, Lucie},
-  year={2014},
-  publisher={Univerzita Palackého}
+  ISBN = {978-80-244-4179-5},
 }
-
 
 @book{12,
   title={Introduction to nanoscience and nanotechnology},
@@ -101,18 +89,12 @@
 }
 
 @book{13,
-  title={Úvod do nanotechnologie},
-  author={Hošek, Jan},
-  year={2010},
-  publisher={České vysoké učení technické}
+  ISBN = {978-80-01-04555-8},
 }
 
-@online{31,
-  title = {Introduction to Nanotechnology: Basic Concepts Explained},
-  url = {https://www.technology.org/2019/08/03/introduction-to-nanotechnology-basic-concepts-explained/},
-  urldate = {2019-08-03}
+@article{14,
+  webpage = {https://www.technology.org/2019/08/03/introduction-to-nanotechnology-basic-concepts-explained/},
 }
-
 
 @inproceedings{15,
   title={A survey of entropy image thresholding techniques},
@@ -161,12 +143,9 @@
   publisher={Elsevier}
 }
 
-@online{31,
-  title = {ResearchGate},
-  url = {https://www.researchgate.net/},
-  year = {2008-2022}
+@article{20,
+  webpage = {https://www.researchgate.net/},
 }
-
 
 @article{21,
   title={Laplacian operator-based edge detectors},
@@ -186,24 +165,20 @@
   year={2017}
 }
 
-@online{31,
-  title = {What is the Difference Between Hierarchical and Partitional Clustering},
-  author = {Yesilyurt, Emre},
-  url = {https://www.cs.auckland.ac.nz/courses/compsci773s1c/lectures/ImageProcessing-html/topic1.htm},
-  urldate = {2022-03-26}
+@article{23,
+  webpage = {https://www.cs.auckland.ac.nz/courses/compsci773s1c/lectures/ImageProcessing-html/topic1.htm},
 }
 
-@online{31,
-  title = {Spatial Frequency Domain},
-  url = {http://dendroid.sk/2011/05/09/k-means-clustering/}
+
+@article{24,
+  webpage = {http://dendroid.sk/2011/05/09/k-means-clustering/},
 }
 
-@online{31,
-  title = {What is the Difference Between Hierarchical and Partitional Clustering},
-  author = {Yesilyurt, Emre},
-  url = {https://medium.com/machine-learning-t%C3%BCrkiye/what-is-the-difference-between-hierarchical-and-partitional-clustering-84d5a4ceb4c0},
-  urldate = {2022-03-26}
+
+@article{25,
+  webpage = {https://medium.com/machine-learning-t%C3%BCrkiye/what-is-the-difference-between-hierarchical-and-partitional-clustering-84d5a4ceb4c0},
 }
+
 
 @article{26,
   title={A review on image segmentation with its clustering techniques},
@@ -215,10 +190,9 @@
   year={2016}
 }
 
-@online{31,
-  title = {Data Clustering Algorithms},
-  url = {https://sites.google.com/site/dataclusteringalgorithms/home?authuser=0},
-  urldate = {2020-08-30}
+
+@article{27,
+  webpage = {https://sites.google.com/site/dataclusteringalgorithms/mst-based-clustering-algorithm?authuser=0},
 }
 
 
@@ -231,12 +205,8 @@
   year={2013},
   publisher={Elsevier}
 }
-
-@book{19,
-  title={Číslicové zpracování neurofiziologických signálů},
-  author={Krajča, Vladimír and Mohylová, Jitka},
-  year={2011},
-  publisher={České vysoké učení technické}
+@book{29,
+  ISBN = {9788001047217},
 }
 
 @article{30,
@@ -250,17 +220,12 @@
   publisher={Wiley Online Library}
 }
 
-@online{31,
-  title = {Convolutional Neural Networks, Explained},
-  author = {Mishra, Mayank},
-  url = {https://towardsdatascience.com/convolutional-neural-networks-explained-9cc5188c4939},
-  urldate = {2020-08-26}
+@article{31,
+  webpage = {https://towardsdatascience.com/convolutional-neural-networks-explained-9cc5188c4939},
 }
 
-@online{32,
-  title = {Nano Nano},
-  url = {https://xsigsummer.wordpress.com/2014/07/15/nano-nano/},
-  urldate = {2014-07-15}
+@article{32,
+  webpage = {https://xsigsummer.wordpress.com/2014/07/15/nano-nano/},
 }
 
 @book{33,
@@ -361,9 +326,6 @@
   publisher={ACS Publications}
 }
 
-@online{43,
-  title = {transmission electron microscope},
-  author = {Joy, David C.},
-  url = {https://www.britannica.com/technology/transmission-electron-microscope},
-  urldate = {2022-10-10}
+@article{43,
+  webpage = {https://www.britannica.com/technology/transmission-electron-microscope}
 }
