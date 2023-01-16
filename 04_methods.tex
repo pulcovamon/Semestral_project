@@ -14,4 +14,70 @@ is library used for work with martices. There was also used Matplotlib Pyplot
 library for plotting and saving images.
 
 First step after loading TEM image is convering it into grayscale due it could
-be filtrated. 
+be filtrated. TEM images can be of different scales and size and number of particles
+in image depends on it. Median filter is used for denoising image. Filtrating works
+of principle of convolution and size and appearance of convolution mask determine type
+of filter. Median filter belongs to nonlinear filters which means that output is not
+linear function of input. Median filter simply counts median value from neighborhood
+of certain pixel for every pixel in image. Advantage of this filter is that it
+preserv edges and removes noise. Size of kernel or pixel neighborhood depends on
+scale of input image and also on type of particles because nanords are usually
+smaller than nanoparticles so it has to be blured less.
+
+Then grayscale image has to be transform into binary image. It is usually done
+by finding appropriate threshold and pixels with value below threshold are 
+transformed to zero and pixels with value above threshold are transformed into
+one or 255 (it depends if binary image values are of type boolean with just 0 and 1
+or 8-bit unsigned integer with values from 0 to 255). In case of this project
+binary image is also inverted. In TEM images particles are black on white background
+so in binary image particles pixels should be zero and background pixels should be one
+and for this application it is better to invert it. There are several types of
+thresholding techniques. Theese techniques uses histogram for calculating
+appropriate threshold. There were used two different techniques in this project.
+Minimum threshold method find pixel valu with minimum frequency in histogram and
+this value is determined as threshold. Other method is called Otsu thresholding
+and it is a bit more complicated algorithm. It consists in going throught every
+pixel value and calculate variance in pixel values below this pixel and above this pixel
+and finds pixel value with the smallest variance. This pixel value is determined as
+threshold. Otsu thresholding is more advanced method and whould work better, but
+in nanoparticles images with larger scale (there were just a few dart particles in center
+of image) this method calculated too high threshold. More than just parctiles pixels
+were determined as foreground. So it was chosen to use minimum thresholding method for
+nanoparticles and Otsu thresholding method for nanorods.
+
+After binarizing image there are used morphology operation to clean up image.
+There are two basic operations called erosion and dilation. It works on principle
+of interaction with structuring element which determines shape of pixel's neighborhood.
+Dilation is used for filling holes and it increases size of objects. Algorithm changes pixel
+value to one if there are enought white pixels in its neighborhood. Erosion is opposite
+of dilation, it is used for removing small objects and it decreases size of objects.
+Algorithm changes pixel value to zero if there are not enought white pixels in its
+neighborhood. There are also two methods wchich consist of both erosion and dilation.
+Opening first uses erosion and later dilation, it is used for removing small objects.
+Closing first uses dilation and later erosion, it is used for removing small holes.
+Opening and closing are better because it changes sizes of objects less than just erosion
+and dilation. In scikit image library there are also fucntions designed perfectly
+for removing small objects or holes. These scikit image function were also used
+in this project for removing artifacts from background and fill holes in particles.
+
+Main part of this project is image segmentation which separates particles so it could
+be analyzed. There are plenty of methods used for segmentation and it is quite difficult
+task to choose the best method and implement it. For this project watershed transformation
+was chosen as main method. This algorithm starts with seeds and binary image. Seeds are
+points or small clusters of points. In perferct world there should be one seed per
+particle in image. Algorithm takes seeds and starts filling binary mask from theese points.
+It is called watershed because seeds can be imagined as valleys (or local minima) and
+algorithm fills every valley with water of different value starting from local minima.
+It ends when it reaches edge of binary mask or when it meets water from another valley.
+Labeled image is created, each pixel in one label has same number, background has zero.
+There are more methods how to find seeds, in this project method called distance map
+was used. It works on principle of finding for each zero pixel distance (number of pixels)
+to the closest white pixel. Seeds were created by finding local maxima in distance fucntion.
+It may happen that algorithm oversegments image so there are some small artifacts. So it
+was decided to filter too small labels. It is done by algorithm calculates median of 
+areas of labeles and going throught all labels and...
+
+Watershed perfectly divides non-overlapping particles. In overlapping particles may occure
+two cases, watershed divided particles well but did not count with their parts which
+overlap, or it does not devide particles wll so it finds one big label. Due to this
+problem it was decided to use also another segmentation method.
