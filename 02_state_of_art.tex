@@ -54,33 +54,31 @@
         
         \begin{figure}[h]
             \includegraphics[width=\linewidth]{GNR.jpg}
-            \caption{Principle of LPSR in GNRs, taken from \cite{19}}
+            \caption{Principle of LPSR in GNRs, taken from~\cite{19}}
             \label{fig:GNR}
         \end{figure}
 
         \begin{figure}[h]
             \includegraphics[width=\linewidth]{color.png}
-            \caption{GNR solutions of different colors, taken from \cite{32}}
-            \label{fig:color}
+            \caption{GNR solutions of different colors, taken from~\cite{32}}~\label{fig:color}
         \end{figure}
 
-        One of the most common methods for determination of size and shape of AuNPs and GNRs \ref{fig:GNR_shape} is transmission electron microscopy (TEM) which is very accurate and well-known technique.
+        One of the most common methods for determination of size and shape of AuNPs and GNRs~\ref{fig:GNR_shape} is transmission electron microscopy (TEM) which is very accurate and well-known technique.
         It is just necessary to make the images of the sample and using computer count the number and size of the NPs. But there are some disadvantages. For example,
         there is the complicated and nontrivial preparation of the sample, and the measurement itself can take a long time, as well as the requirement of the actual microscope itself.
-        On the other hand, it can be used for every size and shape of AuNPs and even GNRs. \cite{42}
+        On the other hand, it can be used for every size and shape of AuNPs and even GNRs.~\cite{42}
 
         \begin{figure}[h]
             \includegraphics[width=\linewidth]{GNRs_shapes.png}
-            \caption{TEM images of various shape and size GNRs, taken from \cite{20}}
-            \label{fig:GNR_shape}
+            \caption{TEM images of various shape and size GNRs, taken from~\cite{20}}~\label{fig:GNR_shape}
         \end{figure}
 
         The TEM microscope \ref{fig:TEM} works on the principle of electrons passing through the conductive sample and measuring the intensity of the beam that passes through.
-        It consists of electron gun, system of lenses and fluorescent screen or digital detector. \cite{7}
+        It consists of electron gun, system of lenses and fluorescent screen or digital detector.~\cite{7}
 
         \begin{figure}[h]
             \centerline{\includegraphics[width=250pt]{tem_principle.png}}
-            \caption{TEM instrument schematic, taken from \cite{20}}
+            \caption{TEM instrument schematic, taken from~\cite{20}}
             \label{fig:TEM}
         \end{figure}
 
@@ -108,13 +106,12 @@
         threshold method calculates the value for each point using average region intensity. Advantige of adaptive threshold is that it accommodates to inhomogenous
         lightning of image. There are various ways how to determine threshold value. thresholding can be also divided according to how many thresholds threre are.
         Bi-level thresholding is based on one threshold and divides pixels into two groups and multilevel thresholding selects multiple thresholds, thus there are several groups of pixels.
-        One of the most used methods is called Otsu threshold \ref{fig:otsu} and consist in finding value, where weighted within class variance is minimal. This method expects that histogram of image
+        One of the most used methods is called Otsu threshold~\ref{fig:otsu} and consist in finding value, where weighted within class variance is minimal. This method expects that histogram of image
         is bimodal, it means there is sufficient difference between background and region of interest intensity. \cite{15, 16, 17, 18}
         
         \begin{figure}[h]
             \includegraphics[width=\linewidth]{otsu_method.png}
-            \caption{otsu threshold in bimodal histogram, taken from \cite{20}}
-            \label{fig:otsu}
+            \caption{otsu threshold in bimodal histogram, taken from~\cite{20}}~\label{fig:otsu}
         \end{figure}
 
         There are also entropy-based techniques. Entropy is originally
@@ -124,12 +121,12 @@
         it determines threshold as value, where overlap of these two population is minimal. It uses estimation of parameters of mean value, standard deviation and probability.
         This algorithm works with 2-D histogram, which can show relatiionship between two variables. There is also 2-D minimum error method which takes in account also position of pixel.
         multilevel thresholding determines more that one threshold and divides image into more levels depending on intensity and color (in RGB images). It is ideal for images with color
-        inhomogenous background. Thus it is possible for example to assign both dark and bright pixels to zero and middle gray pixels to one. disadvantage of these algorithms is
+        inhomogenous background. Thus it is possible for example to assign both dark and bright pixels to zero and middle gray pixels to one. Disadvantage of these algorithms is
         it is often not possible to detect number of thresholds automatically. There are methods which can determine it using several times lowpass or highpass filters in image histogram
         to decrease or incease number of local maxina and minima.
         Another region-based type of image segmantation algorithms is called regional growth segmantation. It assumes that pixels of one region have similar values. Algorithm first selects
         seed pixel and then join similar pixels in neiborhood connected with this pixel into the region. It requires threshold value which is used as maximum difference between seed pixel
-        and pixels assigned to the region. Disadvantage of these method is that it is slow and susceptible to noise. \cite{15, 16, 17, 18}
+        and pixels assigned to the region. Disadvantage of these method is that it is slow and susceptible to noise.~\cite{15, 16, 17, 18}
 
         Another segmantation algorithm is called watershed segmantation algorithm (\ref{fig:watershed}) and is also region-based method. The name and even principle comes from nature and it is applied
         to grayscale or binary images. The goal of this algorithm is to find all connections in the image. connected pixels mean pixels that create one object (for example nanoparticle).
@@ -137,16 +134,14 @@
         if it is reverse, image has to be negated first. In case of grayscale images the distance is calculated from local minima. So objects have to be of lower value than background.
         When distance map is calculated, watershed transform can be applied, it starts filling pixels from the highest value of distance and stops before two connected object join into one.
         It is called decomposition into catchment basins. Basins represente individual objects or regions. Every pixel of image is classified into one of the region or to background,
-        so noise can be problem, because it creates large number of small regions. It is called over-segmantation. Thus image has to be filtered before applying watershed transform.
-        \cite{2, 3}
+        so noise can be problem, because it creates large number of small regions. It is called over-segmantation. Thus image has to be filtered before applying watershed transform.~\cite{2, 3}
         
         \begin{figure}[h]
             \includegraphics[width=\linewidth]{watershed.jpg}
-            \caption{Watershed principle, taken from \cite{20}}
-            \label{fig:watershed}
+            \caption{Watershed principle, taken from~\cite{20}}~\label{fig:watershed}
         \end{figure}
 
-        Edge detection technique works on principle of finding local changes and discontinuities in the image \cite{22}. It works with spatial domain instead of histogram in contrast with thresholding.
+        Edge detection technique works on principle of finding local changes and discontinuities in the image~\cite{22}. It works with spatial domain instead of histogram in contrast with thresholding.
         Edge detection means detecting high frequencies in image, so it works like high-pass filter. Spatial frequency is generally number of cycles per distance, it has two components,
         frequency in x axis and y axis. In images it has units pairs of lines per milimeter, it means how quickly low value pixels shifts changes with high value pixels.
         This spectra can be obtained using discrete 2D Fourier transform, which is function of x and y. Thus high-pass filter extracts high frequencies and low-pass filter low frequencies \cite{23}.
@@ -155,22 +150,20 @@
         There are more steps in edge detection algorithm, filtering is used for removing noise. For example salt and pepper noise
         which means random white and black pixels in the image. It has to be very well balanced because filtering also reduces edge strange.
         Then there is enhancement phase which points up pixels with greater change of value. This step uses calculating gradient. Last step is called detection
-        and it removes pixels with nonzero gradients which are nor edges. \cite{3} Greater changes of value can be detected using differential operators which can calculate derivatives.
+        and it removes pixels with nonzero gradients which are nor edges.~\cite{3} Greater changes of value can be detected using differential operators which can calculate derivatives.
         There are several types of these descrete operators, Sobel and Laplacian operators are of the most used. Sobel operator calculates first derivative in each pixel.
         Tha algorithm uses two 3x3 matrices, transverse matrix which founds gradients in horizontal direction and longitudal matrix which founds gradients in vertical direction \cite{17, 22}.
         Then size of gradient is calculated using equation:
 
         \begin{equation}
             G = \sqrt{G_x^2 + G_y^2}
-        \end{equation}
-        \cite{22}
+        \end{equation}~\cite{22}
         
         And vector of gradient can be calculated using equation:
 
         \begin{equation}
             \Theta = \arctan{\frac{G_x}{G_y}}
-        \end{equation}
-        \cite{22}
+        \end{equation}~\cite{22}
 
         Zero angle corresponds with longitudinal edge, where pixels in left have lower value than ones in right.
 
@@ -186,7 +179,7 @@
                 0 & 0 & 0\\
                 -1 & -2 & -1
             \end{bmatrix}
-            \caption{Sobel operators, horizontal and vertical \cite{22}}
+            \caption{Sobel operators, horizontal and vertical~\cite{22}}
         \end{figure}
 
         Another type of differential operator is called Laplacian operator and it is operator of second derivative and it detects zero-crossing of image intensity. It is more accurate
