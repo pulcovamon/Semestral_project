@@ -1,6 +1,6 @@
-    \section{State-of-art}
-
     \pagestyle{plain}
+
+\subsection{Nanotechnology and nanoparticles}
 
         Nanotechnology is rapidly developing field, which is widely used in diagnostics, therapeutics and generally in biomedical research.
         Innovations in this discipline of science brings big opportunities not only for biomedicine but also for electronics, photonics, or energetics.
@@ -22,6 +22,8 @@
         in 1959 Richard Freyman, phisicist who got Nobel prize, said: 'There is plenty of room at the bottom, an invitation to enter a new field of physics.
         Nanotechnology was even used before people knew about it. For example cup from Roman empire changing color depending on angle of wiew was found.
         This was caused by nanoparticles. \cite{11, 12, 33, 34}
+
+\subsubsection{Plasmon resonance nanoparticles}
 
         Special type of NPs with huge utilization in biomedicine include surface plasmons, which are special type of electrons on the surface of NPs.
         These NPs can interact with light or generally electromagnetic radiation of wavelength much bigger than size of the NPs and localized surface
@@ -63,6 +65,8 @@
             \caption{GNR solutions of different colors, taken from~\cite{32}}~\label{fig:color}
         \end{figure}
 
+\subsection{Transmition electron miscroscopy}
+
         One of the most common methods for determination of size and shape of AuNPs and GNRs~\ref{fig:GNR_shape} is transmission electron microscopy (TEM) which is very accurate and well-known technique.
         It is just necessary to make the images of the sample and using computer count the number and size of the NPs. But there are some disadvantages. For example,
         there is the complicated and nontrivial preparation of the sample, and the measurement itself can take a long time, as well as the requirement of the actual microscope itself.
@@ -90,6 +94,8 @@
         and every next lens increases the magnification range. The last step is detecting the image. There are two options. The electron beam may be absorbed on the fluorescent screen
         which produces visible light. Or it may be detected by camera and displayed on the monitor and saved as .jpg image. \cite{7}
 
+\subsection{Segmentation methods}
+
         With TEM it is more complicated, because the result can be obtained only after image processing. It is necessary to use segmantation methods to get number, sizes and shapes of
         NPs and NRs. Segmantation is image processing technique, which transforms image into regions, each representing one object, and includes deviding objects and background.
         Image processing can be divided into three layers, segmantation belongs to low layer, then there is image analysis which belongs to middle layer and image undestanding in high layer.
@@ -99,6 +105,8 @@
         But there are more steps than the segmantation, the result has to be evaluated using another algorithms. There are more types of techniques, some of them are based on
         edge detection using discontinuities in pixel values. Another techniques find similarities in regions, there are technique like region growing, clustering and thresholding.
         There are, clustering methods, connectivity-preserving techniques and region-based methods which collects regions with similar intensity, color and texture, etc. \cite{1, 2, 15, 17}
+
+\subsubsection{Thresholding methods}
 
         The most basic and even fast methods are region-based methods. This group includes for example threshold segmantation and regional grown segmantation.
         First mentioned technique is very simple and fast, it just divides pixels depending on threir value. thresholding does not take in account posision of pixel,
@@ -140,6 +148,8 @@
             \includegraphics[width=\linewidth]{watershed.jpg}
             \caption{Watershed principle, taken from~\cite{20}}~\label{fig:watershed}
         \end{figure}
+
+\subsubsection{Edge detection methods}
 
         Edge detection technique works on principle of finding local changes and discontinuities in the image~\cite{22}. It works with spatial domain instead of histogram in contrast with thresholding.
         Edge detection means detecting high frequencies in image, so it works like high-pass filter. Spatial frequency is generally number of cycles per distance, it has two components,
@@ -203,6 +213,8 @@
             \caption{Laplacian operator \cite{22}}
         \end{figure}
 
+\subsubsection{Clustering methods}
+
         Clustering techniques work on principle of deviding pixels into various groups (clusters) depending on their characteristics. Cluster can be defined as group of pixels
         with similar properties with each other in same cluster and diverse with each other clusters \cite{26}. There are two types of clustering algorithms, hierarchical clustering
         is based on merging pixels with similar characteristics or spliting pixels with opposite characteristics and finds all possible combinations. Partitional clustering
@@ -226,6 +238,8 @@
         algorithm first randomly selects c centers, then calculates membership and updates cluster centers. Disadvantage is the same as in k-means,
         it is necessary to specify C parameter \cite{26, 27, 28}. There are more clustering algorithms, for example Gaussian clustering, but it has disadvantage, that is very complex.
         It is also iterative method and works on principle of calculating probability \cite{27}.
+
+\subsubsection{Machine learning methods}
 
         There are also image segmantation techniques which use deep learning, wchich is subset of machine learning using neural network architecture with many layers.
         These systems requires large number of sample images and very good computating power. In biomedicine it is udes for example for automatic detectiion of cancer cells.
@@ -262,12 +276,3 @@
         Recurrent neural network (RNN) are not feed-forward neural network, it means signal does not move just forward like in ANN and CNN. There is recurrent path which is able to affect input.
         it is connected with feedback, which figures like memory which connects sequence of data. RNN works previous data, so it can take it in account and output depends on it.
         These sequences of data represent in image processing spatial domain. \cite{30}
-
-    \clearpage	
-    \renewcommand{\refname}{Reference} 	% Přejmenování Reference
-    (Nepodařilo se mi najít bibTex citace pro jiné zdroje než články, zatím jsem vložila jen ISBN pro knihy
-    a odkazy pro webové stránky, do finální verze projektu to doplním.)
-    \printbibliography
-    \clearpage
-
-\end{document}

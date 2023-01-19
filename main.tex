@@ -29,7 +29,7 @@
 
 %% Přidání balíčků podporujících různé funkcionality - VOLITELNÉ, DOPLŇKOVÉ
 % Existuje celá řada dalších
-%\usepackage[]{algorithm2e}				    % balíček pro pseudokód
+\usepackage[]{algorithm2e}				    % balíček pro pseudokód
 %\usepackage{ifthen}                        % pro algoritmy if else
 %\usepackage{paralist}                      % Rozšířená možnost pro seznamy. Větší škála a možnosti jak seznamy dělat autoamticky. 
 %\usepackage{fontspec}                      % specifické fonty
@@ -39,7 +39,8 @@
 %% Přidání speciálních příkazů 
 \newcommand{\at}{\makeatletter @\makeatother}           % Vytiskne zavináč - \at
 \newcommand{\degree}[1][]{\ensuremath{{#1}^\circ}}      % Vytiskne stupeň - \degree
-\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}                                                     % zarovnání v tabulce, vycentrování, potřebuje \usepackage{array}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% zarovnání v tabulce, vycentrování, potřebuje \usepackage{array}
 
 
 %% Ostatní definice a nastavení
@@ -54,6 +55,7 @@
 \counterwithin{figure}{section}         % číslování obrázků dle sekcí/kapitol
 \counterwithin{table}{section}          % číslování tabulek dle sekcí/kapitol
 \numberwithin{equation}{section}        % číslování rovnic dle sekcí/kapitol
+\usepackage[figurename=Fig.]{caption}
 
 
 \setlength{\parskip}{6pt}                   % odsazení mezi odstavci
@@ -75,14 +77,14 @@
 \newcommand{\vedouci}{doc. Ing. Vladimíra Petráková PhD.}
 \newcommand{\nazevENG}{Automatical determination of size and shape of nanoparticles for biomedical applications}
 \newcommand{\nazev}{Automatické určení tvaru a velikosti nanočástic pro biomedicínské aplikace}
-\newcommand{\typ}{Přehled současného stavu}
-\newcommand{\rok}{2022}
+\newcommand{\typ}{Semestrální projekt 2}
+\newcommand{\rok}{2023}
 % Pro program a obor jsou instrukce zde: http://www.fbmi.cvut.cz/fakulta/uredni-deska 
 % Nově akreditované mají pouze studijní programy
 \newcommand{\program}{Biomedicínská technika}
 
 % názvy obrázků
-\newcommand{\}{}
+%\newcommand{\}{}
 
 %% Vlastní začátek dokumentu
 \begin{document}
@@ -126,7 +128,7 @@
     \null\vfill
 	\section*{Prohlášení}
 	% \hspace ruší odsazení odstavce - v šabloně u prohlášení odstavce odsazené nejsou. 
-    Prohlašuji, že jsem bakalářskou práci s názvem \uv{\nazev} vypracoval/a samostatně a~použil/a k~tomu úplný výčet citací použitých pramenů, které uvádím v seznamu přiloženém k~bakalářské práci.
+    Prohlašuji, že jsem semestrální projekt 2 s názvem \uv{\nazev} vypracovala samostatně a~použila k~tomu úplný výčet citací použitých pramenů, které uvádím v seznamu přiloženém k~semestrálnímu projektu 2.
 
     \hspace{-0.75cm}Nemám závažný důvod proti užití tohoto školního díla ve smyslu \S 60 Zákona č.121/2000~Sb., o~právu autorském, o~právech souvisejících s právem autorským a~o~změně některých zákonů (autorský zákon), ve znění pozdějších předpisů. 
     
@@ -139,34 +141,47 @@
 	\clearpage
 	
 	\null\vfill
-	\section*{Poděkování}
-	Rád/a bych poděkoval/a… 
-	    
-    Poděkování je nepovinné, ale obvyklé. 
-    Vedoucímu práce se zpravidla děkuje, oponentovi zásadně ne. 
-    Poraďte se s vedoucím práce, zda by nebylo vhodné uvést v poděkování číslo grantu, ze kterého byla práce podpořena.  
+	\section*{Acknowledgement}
+	I would like to thank my supervisor \vedouci for all her help and time, I would also like to thank Ing. Miroslav Hekrdla PhD. for very significant help with segmentation methods, Python code and text of project, this support was totally crucial. I would also like to thank Ing. Niklas Hansen for support with every laboratory work and for TEM images.
 
     \clearpage	
+
+    	\null\vfill	
+	\section*{ABSTRACT}
+        \subsection*{\nazevENG:}
+		 
+       Nanotechnology is widely used in biomedical research. For their usage it is important to know sizes and shapes of particles. These parameters can be measured by transmission electron microscopy, but analysis of images from transmission electron microscope (TEM) is complicated and tedious. It would be easier if method for automatic evaluation of these parameters would exist. The goal of this project is to create program for automatic determination of sizes and shape of nanoparticles and nanorods from TEM images.
+
+       TEM samples of nanoparticles and nanorods of various sizes were used and TEM images were acquired. Image analysis methods were used for image adjustement and two image segmentation methods were used. First method is watershed transform and second method is circle hough transform.
+
+       Python program was created and tested in various images of nanoparticles and nanorods. Sizes and shapes of nanoparticles and nanords were calculated and histograms of sizes were plotted.
+
+       Possible errors may be caused by wet sample or by low quality of TEM images.
+
+       The goals of the project were completed and evaluated.
+    
+	\subsection*{Key words}
+		nanoparticles, transmission electron microscopy, image segmentation, watershed transform, circle hough transform
+	\clearpage
 
 	
 	\null\vfill	
 	\section*{ABSTRAKT}
         \subsection*{\nazev:}
-	    Výstižná charakteristika cílů, metod, výsledků, (diskuse) a závěrů bakalářské práce v rozsahu asi 10 řádků. 
+    Nanotechnologie je široce využívána v biomedicínském výzkumu. Pro její využití je nezbytné znát velikosti a tvary použitých nanočástic. Tyto parametry se běžně měří pomocí transmisní elektronové miskroskopie, ale analýza dat z tohoto mikroskopu je náročná a zdlouhavá. Analýzu by zjednodušila metoda pro automatické určení těchto parametrů. Cílem tohoto projektu je vytvořit program pro automatické určení veliskoti a tvaru nanočástic ze snímků ze elektronového mikroskopu.
+
+    Pro měření bylo využito několik vzorků nanočástic a nanotyčinek různých velikostí, tyto vzorky jsou určeny pro transmisní elektronovou mikroskopii. Bylo pořízeno několik mikroskopických snímků každého vzorku. Pro analýzu snímků byly využity metody analýzy obrazu, primárně segmentace obrazu. Byly využity dvě metody pro segmentaci a to watershed transfomace a hough transformace.
+
+    Byl vytvořen program v jazyce Python pro automatickou analýzu mikroskopických snímků nanočástic, tento program byl testován na snímcích nanočástic různých velikostí a tvarů. Výstupy programu jsou vypočtené velikosti a tvary nanočástic a histogramy velikostí.
+
+    Chyby měření mohly být způsobeny nedostatečně vysušeným vzorkem nebo nízkou kvalitou mikroskopických snímků.
+
+    Cíle byly splněny a zhodnoceny.
+     
 	\subsection*{Klíčová slova}
-		výčet tří až pěti klíčových slov nebo sousloví charakterizujících obsah bakalářské práce
+		nanočástice, transmisní elektronová mikroskopie, segmentace obrazu, watershed transformace, kruhová hough transformace
 	\clearpage
 		
-		
-	\null\vfill	
-	\section*{ABSTRACT}
-        \subsection*{\nazevENG:}
-		 
-        A concise summary of aims, methods, results, discussion (if needed) and conclusions of the Bachelor’s Thesis within the range of about 10 lines.
-    
-	\subsection*{Key words}
-		Listing 3 to 5 key words characterizing the subject-matter of the Bachelor's Thesis.
-	\clearpage
 	
     \pagestyle{plain}	% Číslování stránek začíná odsud
 	
@@ -176,7 +191,7 @@
 
 	\section*{Seznam symbolů a zkratek} %sekce = nadpis, s * neni v obsahu
 	\addcontentsline{toc}{section}{Seznam symbolů zkratek}
-	\input{00_seznam_symbolu_a_zkratek}
+	\input{00_symbols}
 	\clearpage
 		
 	    %\addcontentsline{toc}{section}{Seznam tabulek}
@@ -184,49 +199,48 @@
 	
 		%\clearpage 			% kones stránky a odskok na další
 		
-		%\addcontentsline{toc}{section}{Seznam obrázků}
-		%\listoffigures 		% seznam obrázků
-		%\clearpage
+		\addcontentsline{toc}{section}{List of figures}
+		\listoffigures 		% seznam obrázků
+		\clearpage
 	
-		%\addcontentsline{toc}{section}{Seznam algoritmů}
-		%\listofalgorithms
-		%\clearpage
-        \section{introduction}
+		\addcontentsline{toc}{section}{List of algorithms}
+		\listofalgorithms
+		\clearpage
+  
+        \section{Introduction}
         \input{01_introduction}
         \clearpage
         
-        \section{state_of_art}
+        \section{State of art}
         \input{02_state_of_art}
         \clearpage
         
-        \section{goals}
+        \section{Goals}
         \input{03_goals}
         \clearpage
         
-        \section{methods}
+        \section{Methods}
         \input{04_methods}
         \clearpage
         
-        \section{results}
+        \section{Results}
         \input{05_results}
         \clearpage
         
-        \section{discussion}
-        \input{06_discusssion}
+        \section{Discussion}
+        \input{06_discussion}
         \clearpage
         
-        \section{conclusion}
+        \section{Conclusion}
         \input{07_conclusion}
         \clearpage
     
     %-------------Literatura-------------------
-        \clearpage	
-        \renewcommand{\refname}{Seznam použité literatury} 	% Přejmenování Reference
-        \addcontentsline{toc}{section}{Seznam použité literatury}     % Přidání této kapitoly do obsahu
-        \printbibliography
-        \clearpage
+    \clearpage	
+    \renewcommand{\refname}{Reference} 	% Přejmenování Reference
+    \printbibliography
+    \clearpage
     
     %-------------Přílohy----------------------
-        \input{08_prilohy}
         
     \end{document}

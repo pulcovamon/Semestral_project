@@ -1,24 +1,23 @@
-section{methods}
-
 \pagestyle{plain}
 
-subsection{Measurement}
+\subsection{Measurement}
 
 TEM measurement includes sample preparation. It is very important to have
 the sample dry during the TEM measurement so the preparation must start
-a few hours before. The very first step is getting the copper grids with carbon
+a few hours before. The very first step is getting the copper grids (fig:\ref{fig:grid}) with carbon
 coating. The reason for using copper grid is its conductivity, so the electrons
 from the TEM can go thru the grid easily and it also is not so expensive like gold
 or platinum girds. In the second step it is necessary to adsorb the solution that is
 to be measured onto the grid. The volume of pipetted solution has to be proportional
 to the size of the grid. After that the samples have to become dry.
 That is the reason why it was prepared several hours before the measurement.
-The samples are being prepared using dropcasting, pipette with volume 1 μL was used.
+The samples are being prepared using dropcasting, pipette with volume 1 \(\mu\)L was used.
 
 \begin{figure}[h]
-    \includegraphics[width=\linewidth]{grid.jpg}
-    \caption{Diagram of copper grid, taken from \cite{}}
-    \label{fig:otsu}
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{grid.jpg}
+    \caption{Image of copper grid, taken from~\cite{grid}}~\label{fig:grid}
+\end{center}
 \end{figure}
 
 The microscope measurement itself is being done by microscope technician.
@@ -27,7 +26,7 @@ Then it is necessary to focus it on the place where the sample is. It is good to
 more than one picture of each sample. It is also important to find places where are
 some particles but where these do not overlap so much.
 
-subsection{Image analysis}
+\subsection{Image analysis}
 
 Another step is creating program in image analysis, it is writen in Python.
 There were used several Python libraries, most of segmentation methods were
@@ -35,6 +34,8 @@ implemented using Scikit image library, there were also used opencv for Python
 and Scipy ndimage for some functions, these libraries are using Numpy, which
 is library used for work with martices. There was also used Matplotlib Pyplot
 library for plotting and saving images.
+
+\subsubsection{Image adjustment}
 
 First step after loading TEM image is convering it into grayscale due it could
 be filtrated. TEM images can be of different scales and size and number of particles
@@ -83,6 +84,8 @@ and dilation. In scikit image library there are also fucntions designed perfectl
 for removing small objects or holes. These scikit image function were also used
 in this project for removing artifacts from background and fill holes in particles.
 
+\subsubsection{Image segmentation}\label{segmentation}
+
 Main part of this project is image segmentation which separates particles so it could
 be analyzed. There are plenty of methods used for segmentation and it is quite difficult
 task to choose the best method and implement it. For this project watershed transformation
@@ -100,7 +103,7 @@ It may happen that algorithm oversegments image so there are some small artifact
 was decided to filter too small labels. It is done by algorithm which is giong throught
 all labels and calculating median of their areas. If area of current labels is smaller
 than median divided by 1.5 (number was estimated experimentally), label is removed.
-The algorithm finishes when there are no label smaller than median divided by 1.5.
+The algorithm finishes when there are no label smaller than median divided by 1.5. \cite{2, roerdink2000watershed, skimage}
 
 Watershed perfectly divides non-overlapping particles. In overlapping particles may occure
 two cases, watershed divided particles well but did not count with their parts which
@@ -112,9 +115,9 @@ particles is done by finding each connected region and its area is compared with
 median area of labels. If area of connected object is 1.5 times bigger than median,
 it is clasifyed as overlapping particles and ROI of this object is created.
 It was decided to perform hough transformation to detect circles in image. Hough
-transformation wors on principle of transfering image space into hough space, which means
+transformation works on principle of transfering image space into hough space, which means
 there are different axis. Hough circle transform takes every point in binary edge image,
-considers it is circle edge and finds every potential centers of this edge point.
+considers it is circle edge and finds every potential centers of this edge point (see fig:\ref{fig:hough}).
 It means for each x and y in potential circle edge there is function of cx, cy and r,
 which describes coordinates of potential circle centers and potential circle radius.
 For each radius, there is cirle in hough space for each point in image space and
@@ -131,7 +134,14 @@ image or it may detect wrong edges (too small or too big in compare to other cir
 So it is defined minimum distance between two centers and minimum weight of detected circle.
 Than median area of all circles is calculated and circles smaller than median divided by
 1.5 or circles larger than median multiplicated by 3 (both numbers estimated experimentally)
-are removed.
+are removed. \cite{skimage}
+
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{hough.jpg}
+    \caption{Principle of circle hough transform, taken from~\cite{20}}~\label{fig:hough}
+\end{figure}
+
+\subsubsection{Summary of methods}
 
 In summary, non-overlapping particles are detected by watershed algorithm and ovelapping
 particles by hough transformation. There is also hough transform for ellipse, which could
